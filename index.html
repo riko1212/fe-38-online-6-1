@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <form action="#" method="GET" class="contact-form">
+        <label for="box-hobby">boxing</label>
+        <input class="contact-form__input" name="user-name" type="text" placeholder="Имя*" minlength="3" required>
+        <input class="contact-form__input" name="user-email"  type="email" placeholder="Почта*" required>
+        <input class="contact-form__input" name="user-phone" title="xxx-xxx-xx-xx" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон*" required>
+        <fieldset class="contact-form__field">
+            <legend>Your age</legend>
+            <input type="radio" value="10" name="user-age" required><label>10</label>
+            <input type="radio" value="20" name="user-age"><label>20</label>
+            <input type="radio" value="30" name="user-age" checked><label>30</label>
+        </fieldset>
+        <fieldset class="contact-form__field">
+            <legend>Your hobby</legend>
+            <input type="checkbox" value="football" name="user-hobby" required><label>football</label>
+            <label>
+                <input type="checkbox" value="tenis" name="user-hobby" checked>
+                tenis
+            </label>
+            <input type="checkbox" value="box" name="user-hobby" id="box-hobby">
+        </fieldset>
+        <textarea class="contact-form__text" name="user-comment" placeholder="Коммент"></textarea>
+        <select name="city" >
+            <option value="London">London</option>
+            <option value="Rome">Rome</option>
+            <option value="Paris">Paris</option>
+        </select>
+        
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+
+</body>
+
+</html>
+
+user-phone=123-456-78-90
+&user-age=20&
+user-hobby=tenis
+&user-hobby=box#
+
